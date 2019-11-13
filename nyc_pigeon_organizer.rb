@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
         if result[name][key] == nil 
           result[name][key] = []
         end
-        result[name][key].push(stats.to_s)
+        result[name][key].push(key2.to_s)
       end
     end 
   end 
