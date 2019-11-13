@@ -2,6 +2,7 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   #hash1 = color_gender_lives hash 
   #hash2 = stats
+  result = {}
   
   data.collect do |key, value|
     value.collect do |key2, value2|
