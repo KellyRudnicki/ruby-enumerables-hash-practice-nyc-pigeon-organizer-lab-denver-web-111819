@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  result = Hash.new {|h, k| h[k] = Hash.new { |h2, k2| h2[k2] =[] }}
-  
+  #hash1 = color_gender_lives hash 
+  data.collect {|hash1, value| 
   result
 end
