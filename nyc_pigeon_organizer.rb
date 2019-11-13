@@ -1,4 +1,4 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  data.collect {key, value 
+  data.collect {|key, value| 
 end
