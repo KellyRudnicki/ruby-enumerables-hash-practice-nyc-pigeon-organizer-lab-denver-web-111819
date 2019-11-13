@@ -1,8 +1,12 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   result = {}
+  index = 0 
   
-  result[:key] = hash.collect {|key,value| key}
+  while index < data.length do
+    
+  
+  hash.collect {|key,value| key}
     
   result 
 end
