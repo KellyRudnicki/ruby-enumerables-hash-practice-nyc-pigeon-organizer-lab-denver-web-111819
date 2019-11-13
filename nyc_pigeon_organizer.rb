@@ -1,6 +1,7 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  result = Hash.new {|h, k| h[k] = Hash.new { |h2, k2| h2[k2] =[]
+  result = Hash.new {|h, k| h[k] = Hash.new { |h2, k2| h2[k2] =[] }}
+  
   data.each do |key, value|
     value.each do |stats, all_names|
       all_names.each do |name|
