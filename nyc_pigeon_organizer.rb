@@ -4,9 +4,9 @@ def nyc_pigeon_organizer(data)
   #hash2 = stats
   result = {}
   
-  data.each do |key, value|
-    value.each do |key2, value2|
-      value2.each do |name|
+  data.collect do |key, value|
+    value.collect do |key2, value2|
+      value2.collect do |name|
         if result[name] == nil 
           result[name] = {}
         end
