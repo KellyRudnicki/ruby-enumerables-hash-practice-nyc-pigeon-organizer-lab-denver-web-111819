@@ -4,18 +4,16 @@ def nyc_pigeon_organizer(data)
   #hash2 = stats
   result = {}
   
-  data.collect do |key, value|
-    value.collect do |key2, value2|
-      value2.collect do |name|
-        if result[name] == nil 
-          result[name] = {}
-        end
-        if result[name][key] == nil 
-          result[name][key] = []
-        end
-        result[name][key].push(key2.to_s)
+  data.collect {|key, value| value.collect{|key2, value2| value2.collect{|name|
+      if result[name] == nil 
+        result[name] = {}
       end
-    end 
-  end 
+      if result[name][key] == nil 
+        result[name][key] = []
+      end
+      result[name][key].push(key2.to_s)
+  }
+  }
+  }
   result
 end
